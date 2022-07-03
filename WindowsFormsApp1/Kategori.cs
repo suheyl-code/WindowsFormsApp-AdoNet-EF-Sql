@@ -61,7 +61,28 @@ namespace WindowsFormsApp1
                 {
                     MessageBox.Show("Error!");
                 }
+                baglanti.Close();
+            }
+        }
 
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            if(datagridKategori != null)
+            {
+                int id = Convert.ToInt32(datagridKategori.CurrentRow.Cells["KategoriID"].Value);
+                SqlCommand cmd = new SqlCommand($"delete Kategoriler where KategoriID={id}", baglanti);
+                baglanti.Open();
+                int etki = cmd.ExecuteNonQuery();
+                if (etki > 0)
+                {
+                    MessageBox.Show("Item Deleted!");
+                    UrunList();
+                }
+                else
+                {
+                    MessageBox.Show("Error!");
+                }
+                baglanti.Close();
             }
         }
     }

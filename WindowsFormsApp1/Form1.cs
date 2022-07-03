@@ -60,7 +60,7 @@ namespace WindowsFormsApp1
                 {
                     MessageBox.Show("Error!");
                 }
-
+                baglanti.Close();
             }
         }
 
@@ -94,6 +94,43 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Error!");
             }
+            baglanti.Close();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1 != null)
+            {
+                int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["UrunId"].Value);
+                SqlCommand cmd = new SqlCommand($"delete Urunler where UrunID={id}", baglanti);
+                baglanti.Open();
+                int etki = cmd.ExecuteNonQuery();
+                if( etki > 0)
+                {
+                    MessageBox.Show("Item Deleted!");
+                    UrunList();
+                }
+                else
+                {
+                    MessageBox.Show("Error!");
+                }
+                baglanti.Close();
+
+            }
+        }
+
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = baglanti.CreateCommand();
+            komut.CommandText = "select * from Urunler where UrunAdi like '%" + tbxAra.Text + "%'";
+            komut.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter adp = new SqlDataAdapter(komut);
+            adp.Fill(dt);
+            dataGridView1.DataSource = dt;
+            baglanti.Close();
         }
     }
 }

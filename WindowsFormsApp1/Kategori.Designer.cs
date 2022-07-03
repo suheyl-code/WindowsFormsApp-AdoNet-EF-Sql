@@ -34,6 +34,7 @@
             this.tbxKategoriAdi = new System.Windows.Forms.TextBox();
             this.tbxTanimi = new System.Windows.Forms.TextBox();
             this.btnKategoriEkle = new System.Windows.Forms.Button();
+            this.btnSil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagridKategori)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,11 +95,23 @@
             this.btnKategoriEkle.UseVisualStyleBackColor = true;
             this.btnKategoriEkle.Click += new System.EventHandler(this.btnKategoriEkle_Click);
             // 
+            // btnSil
+            // 
+            this.btnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSil.Location = new System.Drawing.Point(564, 29);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(90, 35);
+            this.btnSil.TabIndex = 7;
+            this.btnSil.Text = "Sil";
+            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            // 
             // Kategori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 521);
+            this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnKategoriEkle);
             this.Controls.Add(this.tbxTanimi);
             this.Controls.Add(this.tbxKategoriAdi);
@@ -122,5 +135,6 @@
         private System.Windows.Forms.TextBox tbxKategoriAdi;
         private System.Windows.Forms.TextBox tbxTanimi;
         private System.Windows.Forms.Button btnKategoriEkle;
+        private System.Windows.Forms.Button btnSil;
     }
 }

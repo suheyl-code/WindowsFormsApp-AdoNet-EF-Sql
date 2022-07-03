@@ -38,6 +38,10 @@
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnKategori = new System.Windows.Forms.Button();
+            this.btnSil = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbxAra = new System.Windows.Forms.TextBox();
+            this.btnAra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericFiyat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericStok)).BeginInit();
@@ -143,7 +147,7 @@
             // btnKategori
             // 
             this.btnKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKategori.Location = new System.Drawing.Point(707, 12);
+            this.btnKategori.Location = new System.Drawing.Point(1169, 12);
             this.btnKategori.Name = "btnKategori";
             this.btnKategori.Size = new System.Drawing.Size(121, 76);
             this.btnKategori.TabIndex = 10;
@@ -151,11 +155,55 @@
             this.btnKategori.UseVisualStyleBackColor = true;
             this.btnKategori.Click += new System.EventHandler(this.btnKategori_Click);
             // 
+            // btnSil
+            // 
+            this.btnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSil.Location = new System.Drawing.Point(707, 12);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(121, 76);
+            this.btnSil.TabIndex = 11;
+            this.btnSil.Text = "Sil";
+            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(860, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 22);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Ara";
+            // 
+            // tbxAra
+            // 
+            this.tbxAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxAra.Location = new System.Drawing.Point(864, 52);
+            this.tbxAra.Name = "tbxAra";
+            this.tbxAra.Size = new System.Drawing.Size(100, 24);
+            this.tbxAra.TabIndex = 13;
+            // 
+            // btnAra
+            // 
+            this.btnAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAra.Location = new System.Drawing.Point(980, 50);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.Size = new System.Drawing.Size(56, 29);
+            this.btnAra.TabIndex = 14;
+            this.btnAra.Text = "Ara";
+            this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1441, 506);
+            this.Controls.Add(this.btnAra);
+            this.Controls.Add(this.tbxAra);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnKategori);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnEkle);
@@ -189,6 +237,10 @@
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnKategori;
+        private System.Windows.Forms.Button btnSil;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbxAra;
+        private System.Windows.Forms.Button btnAra;
     }
 }
 
