@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp-AdoNet-Sql", "WindowsFormsApp1\WindowsFormsApp-AdoNet-Sql.csproj", "{63BF079B-FF96-4DFC-AE0C-AD80160C3CEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp-EntityFramework", "WindowsFormsApp-EntityFramework\WindowsFormsApp-EntityFramework.csproj", "{BA116574-A79D-460D-8C77-3BFEB5B4828C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{63BF079B-FF96-4DFC-AE0C-AD80160C3CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63BF079B-FF96-4DFC-AE0C-AD80160C3CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63BF079B-FF96-4DFC-AE0C-AD80160C3CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA116574-A79D-460D-8C77-3BFEB5B4828C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA116574-A79D-460D-8C77-3BFEB5B4828C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA116574-A79D-460D-8C77-3BFEB5B4828C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA116574-A79D-460D-8C77-3BFEB5B4828C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
