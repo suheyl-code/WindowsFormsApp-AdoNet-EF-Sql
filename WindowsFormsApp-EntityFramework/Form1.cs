@@ -87,5 +87,26 @@ namespace WindowsFormsApp_EntityFramework
                 MessageBox.Show("Error!");
             }
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1 != null)
+            {
+                int id = Convert.ToInt32(tbxUrunAdi.Tag);
+                var x = db.Urunler.Find(id);
+                db.Urunler.Remove(x);
+                int etki = db.SaveChanges();
+                if (etki > 0)
+                {
+                    MessageBox.Show("Item Deleted!");
+                    UrunList();
+                }
+                else
+                {
+                    MessageBox.Show("Error!");
+                }
+            }
+            
+        }
     }
 }
