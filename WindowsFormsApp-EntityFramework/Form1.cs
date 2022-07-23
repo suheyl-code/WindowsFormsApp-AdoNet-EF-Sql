@@ -108,5 +108,21 @@ namespace WindowsFormsApp_EntityFramework
             }
             
         }
+
+        private void tbxAra_TextChanged(object sender, EventArgs e)
+        {
+            string search = tbxAra.Text;
+            var value = from item in db.Urunler
+                        where
+                        item.UrunAdi.Contains(search)
+                        select item;
+            dataGridView1.DataSource = value.ToList();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Kategori kt = new Kategori();
+            kt.Show();
+        }
     }
 }
